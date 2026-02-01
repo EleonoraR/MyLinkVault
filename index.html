@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Useful Links</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 40px auto; max-width: 900px; padding: 0 16px; line-height: 1.5; }
+    header { margin-bottom: 18px; }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    p { margin: 0; color: #555; }
+    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 14px; margin: 14px 0; }
+    .card h2 { margin: 0 0 10px; font-size: 18px; }
+    ul { margin: 0; padding-left: 18px; }
+    li { margin: 8px 0; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .tag { font-size: 12px; color: #666; margin-left: 8px; }
+    footer { margin-top: 24px; color: #666; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Useful Links</h1>
+    <p>Manually curated bookmarks (hosted on GitHub Pages).</p>
+  </header>
+
+  <section class="card">
+    <h2>🎨 Design & Assets</h2>
+    <ul>
+      <li><a href="https://colorhunt.co/" target="_blank" rel="noopener">Color Hunt</a> <span class="tag">colors</span></li>
+      <li><a href="https://www.favicon.cc/" target="_blank" rel="noopener">Favicon.cc</a> <span class="tag">icons</span></li>
+      <li><a href="https://fonts.google.com/" target="_blank" rel="noopener">Google Fonts</a> <span class="tag">typography</span></li>
+      <li><a href="https://giphy.com/" target="_blank" rel="noopener">GIPHY</a> <span class="tag">gifs</span></li>
+      <li><a href="https://themeforest.net/" target="_blank" rel="noopener">ThemeForest</a> <span class="tag">templates</span></li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>💻 Coding & Docs</h2>
+    <ul>
+      <li><a href="https://www.py4e.com/" target="_blank" rel="noopener">Python for Everybody (PY4E)</a> <span class="tag">python</span></li>
+      <li><a href="https://cdnjs.com/" target="_blank" rel="noopener">cdnjs</a> <span class="tag">libraries</span></li>
+      <li><a href="https://devdocs.io/" target="_blank" rel="noopener">DevDocs</a> <span class="tag">reference</span></li>
+      <li><a href="https://docs.emmet.io/" target="_blank" rel="noopener">Emmet Docs</a> <span class="tag">html</span></li>
+      <li><a href="https://docs.emmet.io/cheat-sheet/" target="_blank" rel="noopener">Emmet Cheat Sheet</a> <span class="tag">shortcuts</span></li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>📰 News & Research</h2>
+    <ul>
+      <li><a href="https://techcrunch.com/" target="_blank" rel="noopener">TechCrunch</a> <span class="tag">tech news</span></li>
+      <li><a href="https://web.archive.org/" target="_blank" rel="noopener">Wayback Machine (Internet Archive)</a> <span class="tag">archive</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    <div>Last updated: <span id="date"></span></div>
+  </footer>
+
+  <script>
+    document.getElementById("date").textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
